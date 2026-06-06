@@ -1,0 +1,41 @@
+﻿# === 二进制 / 安装包 ===
+Windows/
+Codex++/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.egg
+
+# === Node ===
+node_modules/
+
+# === 嵌套 Git 仓库（避免子模块冲突） ===
+**/.git/
+
+# === IDE / 编辑器 ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === 系统文件 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 日志 ===
+*.log
+
+# === 临时文件 ===
+*.tmp
+*.temp
+*.bak
+
+# === 敏感信息（如 API key 配置文件） ===
+.env
+.env.local
+*.secret

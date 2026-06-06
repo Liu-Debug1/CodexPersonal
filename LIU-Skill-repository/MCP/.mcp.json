@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "undoom-uninstaller-mcp": {
+      "command": "python",
+      "args": [
+        "-m",
+        "undoom_uninstaller_mcp"
+      ]
+    }
+  }
+}

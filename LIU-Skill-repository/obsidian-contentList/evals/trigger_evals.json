@@ -1,0 +1,23 @@
+[
+  {"query": "帮我把这篇C++笔记改成列表格式，段落太密了看着累", "should_trigger": true},
+  {"query": "这段内容能用有序列表重新组织一下吗，现在是纯段落", "should_trigger": true},
+  {"query": "笔记里这段 prose 太多，帮我拆成 bullet point", "should_trigger": true},
+  {"query": "这个知识点的描述可以列表化吗，一条一条列出来更清楚", "should_trigger": true},
+  {"query": "把1.25节的内容优化成列表风格，保持代码块和表格不动", "should_trigger": true},
+  {"query": "整理下这篇笔记的结构，太散了", "should_trigger": true},
+  {"query": "这段文字能改成列表吗，几个要点罗列一下就行", "should_trigger": true},
+  {"query": "帮我把笔记里大段的文字拆成要点列表，条理清晰一点", "should_trigger": true},
+  {"query": "这个技术文章内容太密了，段落转列表优化一下", "should_trigger": true},
+  {"query": "把1.17到1.33节的C++笔记都优化为列表形式", "should_trigger": true},
+
+  {"query": "帮我整理一下这篇笔记的标题编号，按照中文数字那种格式", "should_trigger": false},
+  {"query": "把这段代码里的注释翻译成中文", "should_trigger": false},
+  {"query": "图片里的代码截图帮我OCR识别成代码块", "should_trigger": false},
+  {"query": "这段C++代码帮我审查一下有没有内存泄漏问题", "should_trigger": false},
+  {"query": "用Scott Meyers的视角看看这个接口设计", "should_trigger": false},
+  {"query": "把这个markdown笔记的标题重新编号，我感觉跳号了", "should_trigger": false},
+  {"query": "帮我创建一个新的Obsidian笔记，题目叫C++虚函数详解", "should_trigger": false},
+  {"query": "这段笔记里插入一个mermaid流程图来表达这个继承关系", "should_trigger": false},
+  {"query": "表格和列表哪个更适合表达这个对比信息？", "should_trigger": false},
+  {"query": "帮我在笔记里加一个callout提示，提醒读者注意栈溢出风险", "should_trigger": false}
+]
