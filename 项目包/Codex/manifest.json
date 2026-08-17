@@ -1,0 +1,32 @@
+﻿{
+    "schemaVersion":  1,
+    "projectName":  "Codex",
+    "projectPath":  "D:\\桌面\\Codex",
+    "targetAgent":  "Codex",
+    "legacyPathsToRemove":  [
+
+                            ],
+    "skillsLastUpdated":  "2026-08-03",
+    "lastVerifiedAt":  "2026-08-03T18:13:01.9414177+08:00",
+    "contentSha256":  "6f3f9f7dd48dd2c017bcd9f202d51d09580ca15124860a56024bf51bc86074c0",
+    "fileCount":  2,
+    "managedAssets":  {
+                          "skills":  [
+                                         {
+                                             "name":  "find-skills",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "8f81b1e16b65ab61b586c1e02e0478a77cbfe8e657fe27aba455b8e90d60c18e"
+                                         }
+                                     ],
+                          "plugins":  [
+
+                                      ],
+                          "mcp":  [
+
+                                  ],
+                          "cli":  [
+
+                                  ]
+                      }
+}

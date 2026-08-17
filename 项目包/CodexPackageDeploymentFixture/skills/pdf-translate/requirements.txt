@@ -1,0 +1,29 @@
+# PDF Translate Skill - Dependencies
+
+# Core: PDF text extraction
+pdfplumber>=0.10.0
+
+# Core: Markdown → PDF (v4.0 recommended engine)
+markdown>=3.5.0
+weasyprint>=60.0
+
+# v5.0: Figure extraction from original PDF
+PyMuPDF>=1.23.0
+
+# v5.0: LaTeX compilation (system dependency, not pip)
+# Windows: winget install MiKTeX.MiKTeX
+# macOS:   brew install --cask mactex
+# Linux:   sudo apt install texlive-xetex texlive-lang-chinese
+
+# Legacy: PDF generation (v3.0 and earlier)
+reportlab>=4.0.0
+pypdf>=3.0.0
+
+# Optional: OCR support
+# pytesseract>=0.3.10
+# pdf2image>=1.16.0
+
+# System dependencies (not pip-installable):
+# macOS:  brew install pango
+# Linux:  sudo apt install libpango1.0-dev
+# Windows: GTK3 runtime (https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer)

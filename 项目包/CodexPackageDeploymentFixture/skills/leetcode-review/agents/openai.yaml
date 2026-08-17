@@ -1,0 +1,7 @@
+interface:
+  display_name: "LeetCode C++ 复盘"
+  short_description: "复盘 C++ 题解并生成教学版、可复制版和分类索引"
+  default_prompt: "使用 $leetcode-review 复盘这道 C++ 题解、完善教学版与纯净复制版源码，并更新分类看板。"
+
+policy:
+  allow_implicit_invocation: true

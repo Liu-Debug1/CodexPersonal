@@ -1,0 +1,4 @@
+interface:
+  display_name: "XKWUAI Image Generation"
+  short_description: "Generate images through XKWUAI API"
+  default_prompt: "Use $xkwuai-image-generation to generate an image from this prompt."

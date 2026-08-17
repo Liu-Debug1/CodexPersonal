@@ -1,0 +1,7 @@
+interface:
+  display_name: "Weekly Learning Report PDF"
+  short_description: "Merge weekly DOCX reports with learning-notes PDFs"
+  default_prompt: "Use $weekly-learning-report-pdf to merge this weekly report DOCX and learning-notes PDF into a verified final PDF."
+
+policy:
+  allow_implicit_invocation: true

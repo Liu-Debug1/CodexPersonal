@@ -1,0 +1,24 @@
+{
+  "skill_name": "wechat-article-to-obsidian",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "用 Edge 的 Obsidian Web Clipper 把这个微信公众号链接完整搬运到 Obsidian 的 Clippings 文件夹。保留标题、公众号、作者、发布日期、正文、图片和原文链接，不要摘要，不要改写，也不要多余空行。",
+      "expected_output": "The article is clipped through the Edge Web Clipper into the requested folder, and the resulting Markdown note preserves metadata, complete body order, images, links, and the requested compact spacing.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "这篇文章已经在 Obsidian 里了。把英文段落后面的中文翻译改成 Obsidian 注释，中文导语、标题和推荐阅读不要隐藏；英文和对应中文注释之间不能有空行。",
+      "expected_output": "Only Chinese paragraphs directly paired with English article paragraphs are wrapped in %%...%%, with no blank line between each English paragraph and its comment; unrelated Chinese content remains visible.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我只想知道这篇微信公众号文章讲了什么，请给我总结，不需要保存到 Obsidian。",
+      "expected_output": "The skill should not trigger; this is a standalone summarization request, not a Web Clipper-to-Obsidian task.",
+      "files": []
+    }
+  ]
+}
+

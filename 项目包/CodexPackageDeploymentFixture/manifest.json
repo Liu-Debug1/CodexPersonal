@@ -1,0 +1,180 @@
+﻿{
+    "schemaVersion":  1,
+    "projectName":  "CodexPackageDeploymentFixture",
+    "projectPath":  "C:\\Users\\Liuzwei\\AppData\\Local\\Temp\\codex-package-sync-fixture",
+    "targetAgent":  "Codex",
+    "isTestFixture":  true,
+    "skillsLastUpdated":  "2026-07-31",
+    "lastVerifiedAt":  "2026-07-31T18:20:31.2726446+08:00",
+    "contentSha256":  "ecddbcbc866d7eaf1606b9e867f81894daaa7686fe71296255179c0c5aad2085",
+    "fileCount":  209,
+    "managedAssets":  {
+                          "skills":  [
+                                         {
+                                             "name":  "code-review-cpp",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "f6a7fa66961d32f1ab2e6e967b594f769981e23a6f4290aed1c7ba649d824993"
+                                         },
+                                         {
+                                             "name":  "defuddle",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "ef2cdaaf0bb627640be28bb4e59a8eb5d540b26cdcfcff1efc5ace3651e92384"
+                                         },
+                                         {
+                                             "name":  "disk-cleaner",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "5a2ec394987152e4460826778503398de1e1f2da5ceaea1bd508921d22d31c55"
+                                         },
+                                         {
+                                             "name":  "dispatching-parallel-agents",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "60cc26f54b0c68b188b6f4e15d9a161d932e1dda29179a0681c3eb36caa0f7db"
+                                         },
+                                         {
+                                             "name":  "docx",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "f7cf53694d91ed5cc2763fb25235daeb8ad4ff3492863e1b17cdc5c2dc0396dc"
+                                         },
+                                         {
+                                             "name":  "find-skills",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "8f81b1e16b65ab61b586c1e02e0478a77cbfe8e657fe27aba455b8e90d60c18e"
+                                         },
+                                         {
+                                             "name":  "frontend-design",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "9f911db9473bad18452a6d22ff0ecbb0c862878daa32b2b51a0867a63d7b518b"
+                                         },
+                                         {
+                                             "name":  "grilling",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "4f6e8f146980dce8930f59cc1acee11d8091ca6bae11d3582b345785d5d37610"
+                                         },
+                                         {
+                                             "name":  "grill-me",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "f19f7e9f3872396e8ca2fa56b600afad6d5fbbd62e462b51f381547e156db3a0"
+                                         },
+                                         {
+                                             "name":  "json-canvas",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "dba740ba60d651fc702182b052b83a8df8b37c9b30987e04ff8753f527aed582"
+                                         },
+                                         {
+                                             "name":  "karpathy-guidelines",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "daa2a7f63f8b3bfaf47f93b4a34f9aebfb94cf2a8ad61d7708cbad91e0e75f2d"
+                                         },
+                                         {
+                                             "name":  "leetcode-review",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "fcb87839cf0260d3882d4ad9c6fd7e7876dc7e7ce5329352be9771a103499d33"
+                                         },
+                                         {
+                                             "name":  "mubu-diet-recorder",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "6bf351cc8116a976216cc75db9109b0a6e545b295c274acfed6c3a100ad61fe7"
+                                         },
+                                         {
+                                             "name":  "obsidian",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "6e69bef3e96a497a657a0eab3847c7ea9d1f46fca05b89e6138cc9c2ba8ccd31"
+                                         },
+                                         {
+                                             "name":  "obsidian-bases",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "c14047d901e4726a3802dd4b0011ecb51d51e52296ef7c5005cf4c40a6c90a63"
+                                         },
+                                         {
+                                             "name":  "obsidian-cli",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "ef2a710b45e9f7b39c5e37ac00fca2e9155c2dba2b64aae68c6610ecbb4e8ab4"
+                                         },
+                                         {
+                                             "name":  "obsidian-markdown",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "08f06d00e3bfbd98676ad6cbd20ac2b48be190cab5d7850a9a8283a68defb903"
+                                         },
+                                         {
+                                             "name":  "pdf-translate",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "f1ffec1653115057dea5484903714c4893f41424c89a1e014887646a94f9f9ef"
+                                         },
+                                         {
+                                             "name":  "planning-with-files",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "9b57d766bdf1016161b095e4a43c4c17e2304e99e1220d80b34774a4530b0c57"
+                                         },
+                                         {
+                                             "name":  "pptx",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "f1a7a2a365901938ec0057f99463c0e648b13de5fd153ec8f36edab5f661e437"
+                                         },
+                                         {
+                                             "name":  "setup-codex",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "2b262c76cc392d3d0c349ee89bffa88e9d8f8f13f8f236bbcc2f291fae680343"
+                                         },
+                                         {
+                                             "name":  "skill-creator",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "18f92c654a711e7f7fadf2fcff4e787a8da686798610d23caaa2374e52778895"
+                                         },
+                                         {
+                                             "name":  "skill-sync-repo",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "0773e714e4f2d6b0f8a4c33e4951d6b0c8736227a5f19a05ad55316783bad965"
+                                         },
+                                         {
+                                             "name":  "skill-vetter",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "cc7b342a964aca01ba73557d6f8f9457f23dcac3e98cb6656f6b796d1f915b88"
+                                         },
+                                         {
+                                             "name":  "xlsx",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "e66895e65d4e2e47b64270de4c6c8df88cbd1095426e44463c737a48d1f8cb98"
+                                         },
+                                         {
+                                             "name":  "学习秘书团",
+                                             "source":  "project-package",
+                                             "version":  "local",
+                                             "sha256":  "80d0cfef9c8025052b1d4b2de1b2c3d0aa52639cd4dc98f5fc5e4a72909d78a3"
+                                         }
+                                     ],
+                          "plugins":  [
+
+                                      ],
+                          "mcp":  [
+
+                                  ],
+                          "cli":  [
+
+                                  ]
+                      }
+}
