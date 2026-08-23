@@ -1,0 +1,18 @@
+{
+  "eval_id": 3,
+  "eval_name": "no-highlight-existing-review",
+  "prompt": "请重新复盘提供的 no_highlight_existing_review.md。该文件正文是有意义的英文短文，但没有任何有效的 Obsidian ==...== 学习高亮；URL 和行内代码中的 == 只是边界噪声。文件已经有旧的 # 复盘总结，请在原位重建三个规范区块、去掉 SHOULD_BE_REPLACED 旧占位内容，同时保留 ## 用户备注 及其文字。不得臆造单词、词组、长难句或同义词；translation 要明确写出未检测到有效高亮并保留覆盖检查，construction 仍应根据正文概括主题和行文脉络，synonym 若无证据就明确写未发现足够证据。",
+  "assertions": [
+    "任务被识别为本地英语文章复盘并更新现有文件，而不是新建脱离正文的答案。",
+    "最终只有一个 # 复盘总结，三个规范二级标题各出现一次且顺序正确；三个旧的 SHOULD_BE_REPLACED 占位符已移除。",
+    "translation 明确报告正文有效高亮数量为 0（或等价的“未检测到有效高亮”），保留 ### 覆盖检查，且没有凭空生成单词、词组或长难句条目。",
+    "URL 查询参数和行内代码中的 ==not_a_highlight== 未被计为高亮，也没有出现在词汇覆盖清单中。",
+    "construction 确实概括正文关于长期观察、渐进趋势和基于证据决策的主题与行文推进，而不是分析推荐阅读或 frontmatter。",
+    "synonym 在正文没有可靠同义证据时明确写出未发现足够证据，不能把 URL、代码或臆造词当作同义组。",
+    "复盘区外的 ## 用户备注 标题及“这行用户备注应保留。”文字仍然存在，正文、frontmatter 和推荐阅读没有被删除。"
+  ],
+  "expected_output": "已有复盘的无高亮笔记被幂等更新：旧占位内容被替换，正文没有被编造出词汇条目，用户备注保留。",
+  "input_files": [
+    "evals/files/no_highlight_existing_review.md"
+  ]
+}

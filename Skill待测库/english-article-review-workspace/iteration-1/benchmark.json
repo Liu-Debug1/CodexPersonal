@@ -1,0 +1,343 @@
+{
+  "metadata": {
+    "skill_name": "english-article-review",
+    "skill_path": "D:\\\u684c\u9762\\Codex\\Skill\u5f85\u6d4b\u5e93\\english-article-review",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-08-18T09:08:35Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 34258,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u6b63\u6587\u9ad8\u4eae\u8986\u76d6",
+          "passed": true,
+          "evidence": "H01-H46 \u5171 46 \u4e2a\u7f16\u53f7\uff0c\u5404\u51fa\u73b0\u4e00\u6b21\uff1bURL \u67e5\u8be2\u53c2\u6570\u672a\u7eb3\u5165\u3002"
+        },
+        {
+          "text": "translation \u8d28\u91cf",
+          "passed": true,
+          "evidence": "37 \u4e2a\u5355\u8bcd\u6216\u8bcd\u7ec4\u542b\u8bcd\u6027/\u7ed3\u6784\u7c7b\u522b\uff1b7 \u4e2a\u957f\u96be\u53e5\u542b\u7ed3\u6784\u4e0e\u7ffb\u8bd1\uff1bH35\u3001H37 \u8fb9\u754c\u5f02\u5e38\u4fdd\u7559\u539f\u6587\u5e76\u8bf4\u660e\u3002"
+        },
+        {
+          "text": "\u89c4\u8303\u6807\u9898",
+          "passed": true,
+          "evidence": "# \u590d\u76d8\u603b\u7ed3\u4f4d\u4e8e\u7b2c347\u884c\uff1b\u4e09\u4e2a\u89c4\u5b9a H2 \u5404 1 \u4e2a\u3002"
+        },
+        {
+          "text": "\u552f\u4e00\u8986\u76d6\u68c0\u67e5",
+          "passed": true,
+          "evidence": "### \u8986\u76d6\u68c0\u67e5\u4ec5 1 \u4e2a\uff0c\u4f4d\u4e8e\u7b2c403\u884c\u3002"
+        },
+        {
+          "text": "\u539f\u59cb\u5185\u5bb9\u4fdd\u62a4",
+          "passed": true,
+          "evidence": "\u79fb\u9664\u63d2\u5165\u7684\u590d\u76d8\u533a\u540e\uff0cfrontmatter\u3001\u82f1\u6587\u6b63\u6587\u3001\u4e2d\u6587\u8bd1\u6587\u3001\u56fe\u7247\u3001\u94fe\u63a5\u3001The End\u3001\u63a8\u8350\u9605\u8bfb\u4e0e fixture \u5185\u5bb9\u4e00\u81f4\u3002"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 2657,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u6b63\u6587\u56db\u5904\u5408\u6cd5\u9ad8\u4eae\u5168\u90e8\u8986\u76d6\uff0c\u4e14\u6309\u987a\u5e8f\u8bc6\u522b\u4e3a complacency\u3001uncertain\u3001pushed back against the \u548c\u5b8c\u6574\u957f\u53e5\u3002",
+          "passed": true,
+          "evidence": "\u8986\u76d6\u68c0\u67e5\u5217\u51fa H01-H04\uff0c\u4e14\u6b63\u6587\u8bcd\u6761\u987a\u5e8f\u4e0e fixture \u4e00\u81f4\u3002"
+        },
+        {
+          "text": "YAML\u3001Markdown URL\u3001\u884c\u5185\u4ee3\u7801\u548c fenced code \u4e2d\u7684 == \u672a\u8ba1\u4e3a\u5b66\u4e60\u9ad8\u4eae\u3002",
+          "passed": true,
+          "evidence": "translation \u8986\u76d6\u68c0\u67e5\u5c06\u6240\u6709 URL/\u4ee3\u7801\u8fb9\u754c\u660e\u786e\u5217\u4e3a\u6392\u9664\u9879\uff0c\u672a\u653e\u5165\u5355\u8bcd\u4e0e\u8bcd\u7ec4\u6761\u76ee\u3002"
+        },
+        {
+          "text": "\u8f93\u51fa\u53ea\u6709\u4e00\u4e2a\u6839\u590d\u76d8\u6807\u9898\u548c\u4e09\u4e2a\u6309\u987a\u5e8f\u7684\u89c4\u8303\u4e8c\u7ea7\u6807\u9898\u3002",
+          "passed": true,
+          "evidence": "\u9759\u6001\u8ba1\u6570\u4e3a # \u590d\u76d8\u603b\u7ed3=1\u3001\u4e09\u4e2a\u89c4\u8303\u4e8c\u7ea7\u6807\u9898\u5404=1\u3002"
+        },
+        {
+          "text": "translation \u542b\u8bcd\u6027\u3001\u77ed\u8bed\u7ed3\u6784\u3001\u957f\u53e5\u4e3b\u5e72/\u8bed\u6cd5/\u7ffb\u8bd1\uff0cconstruction \u4e0e synonym \u6709\u6b63\u6587\u8bc1\u636e\u3002",
+          "passed": true,
+          "evidence": "complacency/uncertain \u6709 n./adj.\uff0c\u77ed\u8bed\u6709\u7ed3\u6784\u7c7b\u522b\uff0c\u957f\u53e5\u5305\u542b\u4e3b\u5e72\u3001\u5206\u8bcd\u7701\u7565\u3001\u6bd4\u8f83\u7ed3\u6784\u4e0e\u7ffb\u8bd1\uff1b\u53e6\u4e24\u533a\u5757\u5747\u6709\u6b63\u6587\u8bc1\u636e\u3002"
+        },
+        {
+          "text": "\u590d\u76d8\u533a\u5916 fixture \u5185\u5bb9\u4fdd\u6301\u4e0d\u53d8\u3002",
+          "passed": true,
+          "evidence": "\u79fb\u9664\u63d2\u5165\u590d\u76d8\u533a\u540e\u4e0e fixture \u5185\u5bb9\u4e00\u81f4\uff08\u4ec5\u672b\u5c3e\u6362\u884c\u4f5c\u89c4\u8303\u5316\u6bd4\u8f83\uff09\u3002"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u4efb\u52a1\u88ab\u8bc6\u522b\u4e3a\u672c\u5730\u82f1\u8bed\u6587\u7ae0\u590d\u76d8\u5e76\u66f4\u65b0\u73b0\u6709\u6587\u4ef6\uff0c\u800c\u4e0d\u662f\u65b0\u5efa\u8131\u79bb\u6b63\u6587\u7684\u7b54\u6848\u3002",
+          "passed": true,
+          "evidence": "`outputs/no_highlight_existing_review.md` \u4fdd\u6301\u8f93\u5165\u7b14\u8bb0\u7684\u6807\u9898\u3001\u6b63\u6587\u548c\u65e2\u6709 `# \u590d\u76d8\u603b\u7ed3`\uff0c\u5e76\u5728\u540c\u4e00\u590d\u76d8\u533a\u66ff\u6362\u4e09\u6bb5\u5185\u5bb9\uff1b`result.md` \u4e5f\u8bb0\u5f55\u8be5\u8f93\u51fa\u526f\u672c\u7531 fixture \u539f\u4f4d\u66f4\u65b0\u3002"
+        },
+        {
+          "text": "\u6700\u7ec8\u53ea\u6709\u4e00\u4e2a # \u590d\u76d8\u603b\u7ed3\uff0c\u4e09\u4e2a\u89c4\u8303\u4e8c\u7ea7\u6807\u9898\u5404\u51fa\u73b0\u4e00\u6b21\u4e14\u987a\u5e8f\u6b63\u786e\uff1b\u4e09\u4e2a\u65e7\u7684 SHOULD_BE_REPLACED \u5360\u4f4d\u7b26\u5df2\u79fb\u9664\u3002",
+          "passed": true,
+          "evidence": "\u9759\u6001\u8ba1\u6570\u4e3a `# \u590d\u76d8\u603b\u7ed3` 1 \u6b21\uff0c`## 1. translation`\u3001`## 2. construction`\u3001`## 3. synonym` \u5404 1 \u6b21\u4e14\u987a\u5e8f\u6b63\u786e\uff1b\u8f93\u51fa\u4e2d\u6ca1\u6709 `SHOULD_BE_REPLACED`\u3002"
+        },
+        {
+          "text": "translation \u660e\u786e\u62a5\u544a\u6b63\u6587\u6709\u6548\u9ad8\u4eae\u6570\u91cf\u4e3a 0\uff08\u6216\u7b49\u4ef7\u7684\u201c\u672a\u68c0\u6d4b\u5230\u6709\u6548\u9ad8\u4eae\u201d\uff09\uff0c\u4fdd\u7559 ### \u8986\u76d6\u68c0\u67e5\uff0c\u4e14\u6ca1\u6709\u51ed\u7a7a\u751f\u6210\u5355\u8bcd\u3001\u8bcd\u7ec4\u6216\u957f\u96be\u53e5\u6761\u76ee\u3002",
+          "passed": true,
+          "evidence": "translation \u5199\u6709\u201c\u6b63\u6587\u672a\u68c0\u6d4b\u5230\u6709\u6548\u7684 Obsidian `==...==` \u5b66\u4e60\u9ad8\u4eae\uff08\u6709\u6548\u9ad8\u4eae\u6570\u91cf\uff1a0\uff09\u201d\uff0c\u4fdd\u7559 `### \u8986\u76d6\u68c0\u67e5`\uff0c\u5e76\u660e\u786e\u201c\u672a\u81c6\u9020\u5355\u8bcd\u3001\u8bcd\u7ec4\u6216\u957f\u96be\u53e5\u201d\u3002"
+        },
+        {
+          "text": "URL \u67e5\u8be2\u53c2\u6570\u548c\u884c\u5185\u4ee3\u7801\u4e2d\u7684 ==not_a_highlight== \u672a\u88ab\u8ba1\u4e3a\u9ad8\u4eae\uff0c\u4e5f\u6ca1\u6709\u51fa\u73b0\u5728\u8bcd\u6c47\u8986\u76d6\u6e05\u5355\u4e2d\u3002",
+          "passed": true,
+          "evidence": "\u8986\u76d6\u68c0\u67e5\u660e\u786e\u6392\u9664 frontmatter URL \u7684 `a==b`\u3001\u884c\u5185\u4ee3\u7801 `` `==not_a_highlight==` ``\u3001\u6b63\u6587\u94fe\u63a5 `query==ignored` \u548c\u63a8\u8350\u9605\u8bfb URL \u7684 `x==y`\uff1b\u672a\u751f\u6210\u4efb\u4f55\u8bcd\u6c47\u6761\u76ee\u3002"
+        },
+        {
+          "text": "construction \u786e\u5b9e\u6982\u62ec\u6b63\u6587\u5173\u4e8e\u957f\u671f\u89c2\u5bdf\u3001\u6e10\u8fdb\u8d8b\u52bf\u548c\u57fa\u4e8e\u8bc1\u636e\u51b3\u7b56\u7684\u4e3b\u9898\u4e0e\u884c\u6587\u63a8\u8fdb\uff0c\u800c\u4e0d\u662f\u5206\u6790\u63a8\u8350\u9605\u8bfb\u6216 frontmatter\u3002",
+          "passed": true,
+          "evidence": "`## 2. construction` \u6982\u62ec\u4e86\u201c\u7a33\u5b9a\u800c\u6301\u7eed\u7684\u8fdb\u6b65\u53ef\u4ee5\u4e0e\u4e0d\u786e\u5b9a\u6027\u5e76\u5b58\u201d\uff0c\u5e76\u6309\u201c\u6838\u5fc3\u5224\u65ad \u2192 \u591a\u5e74\u8d8b\u52bf \u2192 \u8010\u5fc3\u89c2\u5bdf\u548c\u57fa\u4e8e\u8bc1\u636e\u7684\u51b3\u7b56\u201d\u5217\u51fa\u4e09\u6b65\u884c\u6587\u8109\u7edc\u3002"
+        },
+        {
+          "text": "synonym \u5728\u6b63\u6587\u6ca1\u6709\u53ef\u9760\u540c\u4e49\u8bc1\u636e\u65f6\u660e\u786e\u5199\u51fa\u672a\u53d1\u73b0\u8db3\u591f\u8bc1\u636e\uff0c\u4e0d\u80fd\u628a URL\u3001\u4ee3\u7801\u6216\u81c6\u9020\u8bcd\u5f53\u4f5c\u540c\u4e49\u7ec4\u3002",
+          "passed": true,
+          "evidence": "`## 3. synonym` \u660e\u786e\u5199\u201c\u672a\u53d1\u73b0\u8db3\u591f\u8bc1\u636e\u6574\u7406\u51fa\u53ef\u9760\u7684\u540c\u4e49\u8bcd\u3001\u540c\u4e49\u8bcd\u7ec4\u6216\u53e5\u5f0f\u66ff\u6362\u7ec4\u201d\uff0c\u5e76\u8bf4\u660e URL \u67e5\u8be2\u53c2\u6570\u548c\u884c\u5185\u4ee3\u7801\u4e0d\u5c5e\u4e8e\u6b63\u6587\u8bc1\u636e\u3002"
+        },
+        {
+          "text": "\u590d\u76d8\u533a\u5916\u7684 ## \u7528\u6237\u5907\u6ce8 \u6807\u9898\u53ca\u201c\u8fd9\u884c\u7528\u6237\u5907\u6ce8\u5e94\u4fdd\u7559\u3002\u201d\u6587\u5b57\u4ecd\u7136\u5b58\u5728\uff0c\u6b63\u6587\u3001frontmatter \u548c\u63a8\u8350\u9605\u8bfb\u6ca1\u6709\u88ab\u5220\u9664\u3002",
+          "passed": true,
+          "evidence": "\u8f93\u51fa\u4ecd\u542b YAML \u4e2d\u7684 `title`\u3001`source`\u3001`created` \u548c `tags`\uff0c\u4fdd\u7559\u4e09\u4e2a Article \u6bb5\u843d\u3001`## \u7528\u6237\u5907\u6ce8` \u53ca\u5176\u539f\u6587\u3001`*The End*` \u548c `## \u63a8\u8350\u9605\u8bfb` \u94fe\u63a5\u3002"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 32677,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u6b63\u6587\u9ad8\u4eae\u8986\u76d6",
+          "passed": false,
+          "evidence": "\u6587\u4e2d\u58f0\u79f0\u5904\u7406 46 \u5904\u5e76\u7ed9\u51fa\u8bcd\u6c47/\u8bcd\u7ec4\u96c6\u5408\uff0c\u4f46\u672a\u63d0\u4f9b\u9010\u6761\u7f16\u53f7\u6620\u5c04\uff0c\u65e0\u6cd5\u4e00\u4e00\u9a8c\u6536\u3002"
+        },
+        {
+          "text": "translation \u8d28\u91cf",
+          "passed": false,
+          "evidence": "\u8bcd\u6027\u3001\u8bcd\u7ec4\u7c7b\u522b\u548c\u957f\u96be\u53e5\u89e3\u91ca\u5b58\u5728\uff0c\u4f46\u957f\u96be\u53e5\u6bb5\u91cd\u590d\u4e00\u6b21\u3002"
+        },
+        {
+          "text": "\u89c4\u8303\u6807\u9898",
+          "passed": true,
+          "evidence": "# \u590d\u76d8\u603b\u7ed3\u4e0e\u4e09\u4e2a\u89c4\u5b9a H2 \u5404 1 \u4e2a\u3002"
+        },
+        {
+          "text": "\u552f\u4e00\u8986\u76d6\u68c0\u67e5",
+          "passed": false,
+          "evidence": "### \u8986\u76d6\u68c0\u67e5\u5728\u7b2c367\u884c\u548c\u7b2c383\u884c\u91cd\u590d\uff1b### \u957f\u96be\u53e5\u4e5f\u5728\u7b2c356\u884c\u548c\u7b2c372\u884c\u91cd\u590d\u3002"
+        },
+        {
+          "text": "\u539f\u59cb\u5185\u5bb9\u4fdd\u62a4",
+          "passed": true,
+          "evidence": "\u79fb\u9664\u63d2\u5165\u7684\u590d\u76d8\u533a\u540e\uff0c\u539f fixture \u5185\u5bb9\u4e00\u81f4\u3002"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 2070,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u6b63\u6587\u56db\u5904\u5408\u6cd5\u9ad8\u4eae\u5168\u90e8\u8986\u76d6\uff0c\u4e14\u6309\u987a\u5e8f\u8bc6\u522b\u4e3a complacency\u3001uncertain\u3001pushed back against the \u548c\u5b8c\u6574\u957f\u53e5\u3002",
+          "passed": false,
+          "evidence": "\u867d\u5217\u51fa\u56db\u4e2a\u6b63\u6587\u8868\u8fbe\uff0c\u4f46\u6ca1\u6709\u7a33\u5b9a\u7684 H01-H04 \u8986\u76d6\u6e05\u5355\uff0c\u4e14\u5c06\u4ee3\u7801/URL \u5339\u914d\u6df7\u5165\u8986\u76d6\u7ed3\u679c\u3002"
+        },
+        {
+          "text": "YAML\u3001Markdown URL\u3001\u884c\u5185\u4ee3\u7801\u548c fenced code \u4e2d\u7684 == \u672a\u8ba1\u4e3a\u5b66\u4e60\u9ad8\u4eae\u3002",
+          "passed": false,
+          "evidence": "\u8f93\u51fa\u628a ignored_inline\u3001ignored_fenced \u548c URL \u7247\u6bb5\u5217\u4e3a\u53ef\u80fd\u5339\u914d\uff1braw_pair_matches=8\u3002"
+        },
+        {
+          "text": "\u8f93\u51fa\u53ea\u6709\u4e00\u4e2a\u6839\u590d\u76d8\u6807\u9898\u548c\u4e09\u4e2a\u6309\u987a\u5e8f\u7684\u89c4\u8303\u4e8c\u7ea7\u6807\u9898\u3002",
+          "passed": true,
+          "evidence": "\u9759\u6001\u8ba1\u6570\u4e3a # \u590d\u76d8\u603b\u7ed3=1\u3001\u4e09\u4e2a\u89c4\u8303\u4e8c\u7ea7\u6807\u9898\u5404=1\u3002"
+        },
+        {
+          "text": "translation \u542b\u8bcd\u6027\u3001\u77ed\u8bed\u7ed3\u6784\u3001\u957f\u53e5\u4e3b\u5e72/\u8bed\u6cd5/\u7ffb\u8bd1\uff0cconstruction \u4e0e synonym \u6709\u6b63\u6587\u8bc1\u636e\u3002",
+          "passed": false,
+          "evidence": "\u6709 n./adj. \u548c\u57fa\u7840\u4e3b\u9898\uff0c\u4f46\u77ed\u8bed\u672a\u6807\u660e\u5b8c\u6574\u7ed3\u6784\u7c7b\u522b\uff0c\u957f\u96be\u53e5\u672a\u7ed9\u51fa\u5b8c\u6574\u8bed\u6cd5/\u8bed\u5883\u7ffb\u8bd1\uff0csynonym \u6df7\u5165\u975e\u540c\u4e49\u76f8\u5173\u8868\u8fbe\u3002"
+        },
+        {
+          "text": "\u590d\u76d8\u533a\u5916 fixture \u5185\u5bb9\u4fdd\u6301\u4e0d\u53d8\u3002",
+          "passed": true,
+          "evidence": "\u79fb\u9664\u63d2\u5165\u590d\u76d8\u533a\u540e\u4e0e fixture \u5185\u5bb9\u4e00\u81f4\uff08\u4ec5\u672b\u5c3e\u6362\u884c\u4f5c\u89c4\u8303\u5316\u6bd4\u8f83\uff09\u3002"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u4efb\u52a1\u88ab\u8bc6\u522b\u4e3a\u672c\u5730\u82f1\u8bed\u6587\u7ae0\u590d\u76d8\u5e76\u66f4\u65b0\u73b0\u6709\u6587\u4ef6\uff0c\u800c\u4e0d\u662f\u65b0\u5efa\u8131\u79bb\u6b63\u6587\u7684\u7b54\u6848\u3002",
+          "passed": true,
+          "evidence": "`outputs/no_highlight_existing_review.md` \u4fdd\u6301\u8f93\u5165\u7b14\u8bb0\u7684\u6807\u9898\u3001\u6b63\u6587\u548c\u65e2\u6709 `# \u590d\u76d8\u603b\u7ed3`\uff0c\u5e76\u5728\u540c\u4e00\u590d\u76d8\u533a\u66ff\u6362\u4e09\u6bb5\u5185\u5bb9\uff1b`result.md` \u8bb0\u5f55\u8fd9\u662f\u672a\u52a0\u8f7d\u5019\u9009 Skill \u7684\u57fa\u7ebf\u539f\u4f4d\u66f4\u65b0\u3002"
+        },
+        {
+          "text": "\u6700\u7ec8\u53ea\u6709\u4e00\u4e2a # \u590d\u76d8\u603b\u7ed3\uff0c\u4e09\u4e2a\u89c4\u8303\u4e8c\u7ea7\u6807\u9898\u5404\u51fa\u73b0\u4e00\u6b21\u4e14\u987a\u5e8f\u6b63\u786e\uff1b\u4e09\u4e2a\u65e7\u7684 SHOULD_BE_REPLACED \u5360\u4f4d\u7b26\u5df2\u79fb\u9664\u3002",
+          "passed": true,
+          "evidence": "\u9759\u6001\u8ba1\u6570\u4e3a `# \u590d\u76d8\u603b\u7ed3` 1 \u6b21\uff0c`## 1. translation`\u3001`## 2. construction`\u3001`## 3. synonym` \u5404 1 \u6b21\u4e14\u987a\u5e8f\u6b63\u786e\uff1b\u8f93\u51fa\u4e2d\u6ca1\u6709 `SHOULD_BE_REPLACED`\u3002"
+        },
+        {
+          "text": "translation \u660e\u786e\u62a5\u544a\u6b63\u6587\u6709\u6548\u9ad8\u4eae\u6570\u91cf\u4e3a 0\uff08\u6216\u7b49\u4ef7\u7684\u201c\u672a\u68c0\u6d4b\u5230\u6709\u6548\u9ad8\u4eae\u201d\uff09\uff0c\u4fdd\u7559 ### \u8986\u76d6\u68c0\u67e5\uff0c\u4e14\u6ca1\u6709\u51ed\u7a7a\u751f\u6210\u5355\u8bcd\u3001\u8bcd\u7ec4\u6216\u957f\u96be\u53e5\u6761\u76ee\u3002",
+          "passed": true,
+          "evidence": "translation \u5199\u6709\u201c\u6b63\u6587\u6709\u6548\u5b66\u4e60\u9ad8\u4eae\u6570\u91cf\u4e3a 0\uff0c\u672a\u751f\u6210\u5355\u8bcd\u6216\u8bcd\u7ec4\u6761\u76ee\u201d\uff0c\u4fdd\u7559 `### \u8986\u76d6\u68c0\u67e5`\uff0c\u5e76\u5199\u660e\u201c\u672a\u81c6\u9020\u8bcd\u6c47\u3001\u8bcd\u7ec4\u6216\u957f\u96be\u53e5\u201d\u3002"
+        },
+        {
+          "text": "URL \u67e5\u8be2\u53c2\u6570\u548c\u884c\u5185\u4ee3\u7801\u4e2d\u7684 ==not_a_highlight== \u672a\u88ab\u8ba1\u4e3a\u9ad8\u4eae\uff0c\u4e5f\u6ca1\u6709\u51fa\u73b0\u5728\u8bcd\u6c47\u8986\u76d6\u6e05\u5355\u4e2d\u3002",
+          "passed": true,
+          "evidence": "\u8986\u76d6\u68c0\u67e5\u660e\u786e\u5c06 `` `==not_a_highlight==` `` \u548c\u94fe\u63a5 URL \u4e2d\u7684 `==` \u8ba4\u5b9a\u4e3a\u8fb9\u754c\u566a\u58f0\u5e76\u6392\u9664\uff1b\u65e0\u5355\u8bcd\u6761\u76ee\u51fa\u73b0\u3002"
+        },
+        {
+          "text": "construction \u786e\u5b9e\u6982\u62ec\u6b63\u6587\u5173\u4e8e\u957f\u671f\u89c2\u5bdf\u3001\u6e10\u8fdb\u8d8b\u52bf\u548c\u57fa\u4e8e\u8bc1\u636e\u51b3\u7b56\u7684\u4e3b\u9898\u4e0e\u884c\u6587\u63a8\u8fdb\uff0c\u800c\u4e0d\u662f\u5206\u6790\u63a8\u8350\u9605\u8bfb\u6216 frontmatter\u3002",
+          "passed": true,
+          "evidence": "`## 2. construction` \u603b\u7ed3\u6301\u7eed\u8fdb\u6b65\u4e0e\u4e0d\u786e\u5b9a\u6027\u7684\u5171\u5b58\uff0c\u5e76\u4f9d\u6b21\u8bf4\u660e\u591a\u5e74\u8d8b\u52bf\u3001\u77ed\u671f\u56f0\u96be\u548c\u57fa\u4e8e\u8bc1\u636e\u51b3\u7b56\uff0c\u672a\u5f15\u7528\u63a8\u8350\u9605\u8bfb\u6216 frontmatter\u3002"
+        },
+        {
+          "text": "synonym \u5728\u6b63\u6587\u6ca1\u6709\u53ef\u9760\u540c\u4e49\u8bc1\u636e\u65f6\u660e\u786e\u5199\u51fa\u672a\u53d1\u73b0\u8db3\u591f\u8bc1\u636e\uff0c\u4e0d\u80fd\u628a URL\u3001\u4ee3\u7801\u6216\u81c6\u9020\u8bcd\u5f53\u4f5c\u540c\u4e49\u7ec4\u3002",
+          "passed": true,
+          "evidence": "`## 3. synonym` \u5199\u6709\u201c\u6b63\u6587\u4e2d\u672a\u53d1\u73b0\u8db3\u591f\u8bc1\u636e\u53ef\u6574\u7406\u4e3a\u53ef\u9760\u7684\u540c\u4e49\u8bcd\u6216\u540c\u4e49\u66ff\u6362\u7ec4\u201d\uff0c\u5e76\u62d2\u7edd\u8865\u5145\u6b63\u6587\u5916\u8868\u8fbe\u3002"
+        },
+        {
+          "text": "\u590d\u76d8\u533a\u5916\u7684 ## \u7528\u6237\u5907\u6ce8 \u6807\u9898\u53ca\u201c\u8fd9\u884c\u7528\u6237\u5907\u6ce8\u5e94\u4fdd\u7559\u3002\u201d\u6587\u5b57\u4ecd\u7136\u5b58\u5728\uff0c\u6b63\u6587\u3001frontmatter \u548c\u63a8\u8350\u9605\u8bfb\u6ca1\u6709\u88ab\u5220\u9664\u3002",
+          "passed": true,
+          "evidence": "\u8f93\u51fa\u4ecd\u542b YAML \u4e2d\u7684 `title`\u3001`source`\u3001`created` \u548c `tags`\uff0c\u4fdd\u7559\u4e09\u4e2a Article \u6bb5\u843d\u3001`## \u7528\u6237\u5907\u6ce8` \u53ca\u5176\u539f\u6587\u3001`*The End*` \u548c `## \u63a8\u8350\u9605\u8bfb` \u94fe\u63a5\u3002"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "tokens": {
+        "mean": 12305.0,
+        "stddev": 19058.2153,
+        "min": 0,
+        "max": 34258
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.6,
+        "stddev": 0.3464,
+        "min": 0.4,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "tokens": {
+        "mean": 11582.3333,
+        "stddev": 18297.8126,
+        "min": 0,
+        "max": 32677
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.40",
+      "time_seconds": "+0.0",
+      "tokens": "+723"
+    }
+  },
+  "notes": []
+}

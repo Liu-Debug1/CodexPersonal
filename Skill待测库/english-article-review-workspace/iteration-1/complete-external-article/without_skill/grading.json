@@ -1,0 +1,60 @@
+{
+  "run_id": "complete-external-article-without_skill",
+  "skill_name": "english-article-review",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "正文高亮覆盖",
+      "passed": false,
+      "evidence": "文中声称处理 46 处并给出词汇/词组集合，但未提供逐条编号映射，无法一一验收。"
+    },
+    {
+      "text": "translation 质量",
+      "passed": false,
+      "evidence": "词性、词组类别和长难句解释存在，但长难句段重复一次。"
+    },
+    {
+      "text": "规范标题",
+      "passed": true,
+      "evidence": "# 复盘总结与三个规定 H2 各 1 个。"
+    },
+    {
+      "text": "唯一覆盖检查",
+      "passed": false,
+      "evidence": "### 覆盖检查在第367行和第383行重复；### 长难句也在第356行和第372行重复。"
+    },
+    {
+      "text": "原始内容保护",
+      "passed": true,
+      "evidence": "移除插入的复盘区后，原 fixture 内容一致。"
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 3,
+    "total": 5,
+    "pass_rate": 0.4
+  },
+  "execution_metrics": {
+    "total_tool_calls": 0,
+    "output_chars": 32677,
+    "errors_encountered": 0
+  },
+  "manual_assessment": {
+    "status": "fail",
+    "score": 55,
+    "summary_text": "失败：虽保留了原文并生成三个规定 H2，但 translation 内重复生成长难句与覆盖检查，违反唯一覆盖检查要求，也没有 H01-H46 的可核验覆盖清单。",
+    "warnings": [
+      null
+    ],
+    "blocking_findings": [
+      "重复的 ### 覆盖检查 使结果不满足唯一覆盖检查验收项。",
+      "重复的 ### 长难句 造成复盘内容重复，降低可读性并使覆盖状态含混。"
+    ]
+  },
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  }
+}

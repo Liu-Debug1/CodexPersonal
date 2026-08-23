@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "eval_id": "complete-external-article",
+  "fixture_path": "D:\\桌面\\Codex\\Skill待测库\\english-article-review\\evals\\files\\complete_external_article.md",
+  "prompt": "完整外刊精读复盘：生成唯一 # 复盘总结 与 ## 1. translation / ## 2. construction / ## 3. synonym；保留 frontmatter、正文、译文、图片、链接、The End 和推荐阅读，不能抓 URL。",
+  "expected": {
+    "valid_body_highlights": 46,
+    "root_heading_count": 1,
+    "required_second_level_heading_count": 1,
+    "coverage_heading_count": 1,
+    "preserve_source_content": true,
+    "exclude_url_query_markers": true
+  },
+  "validation_method": [
+    "将输出中的复盘区移除后，与 fixture 按规范化换行和末尾空行比较",
+    "统计规范标题与覆盖检查标题",
+    "人工核对 translation 词性、短语类型、长难句结构/翻译和异常说明"
+  ],
+  "run": "without_skill",
+  "candidate_skill_read": false,
+  "output_path": "D:\\桌面\\Codex\\Skill待测库\\english-article-review-workspace\\iteration-1\\complete-external-article\\without_skill\\outputs\\complete_external_article.md",
+  "observed": {
+    "valid_body_highlights": 46,
+    "h1_review": 1,
+    "h2_translation": 1,
+    "h2_construction": 1,
+    "h2_synonym": 1,
+    "coverage_heading": 2,
+    "long_sentence_heading": 2,
+    "traceable_ids": "none",
+    "source_preserved_after_removing_review": true,
+    "duplicate_sections": [
+      "### 长难句 at lines 356 and 372",
+      "### 覆盖检查 at lines 367 and 383"
+    ]
+  }
+}

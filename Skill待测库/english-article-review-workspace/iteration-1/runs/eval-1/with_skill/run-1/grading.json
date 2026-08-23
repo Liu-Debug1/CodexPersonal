@@ -1,0 +1,57 @@
+{
+  "run_id": "complete-external-article-with_skill",
+  "skill_name": "english-article-review",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "正文高亮覆盖",
+      "passed": true,
+      "evidence": "H01-H46 共 46 个编号，各出现一次；URL 查询参数未纳入。"
+    },
+    {
+      "text": "translation 质量",
+      "passed": true,
+      "evidence": "37 个单词或词组含词性/结构类别；7 个长难句含结构与翻译；H35、H37 边界异常保留原文并说明。"
+    },
+    {
+      "text": "规范标题",
+      "passed": true,
+      "evidence": "# 复盘总结位于第347行；三个规定 H2 各 1 个。"
+    },
+    {
+      "text": "唯一覆盖检查",
+      "passed": true,
+      "evidence": "### 覆盖检查仅 1 个，位于第403行。"
+    },
+    {
+      "text": "原始内容保护",
+      "passed": true,
+      "evidence": "移除插入的复盘区后，frontmatter、英文正文、中文译文、图片、链接、The End、推荐阅读与 fixture 内容一致。"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "total_tool_calls": 0,
+    "output_chars": 34258,
+    "errors_encountered": 0
+  },
+  "manual_assessment": {
+    "status": "pass",
+    "score": 100,
+    "summary_text": "通过：唯一复盘结构、46 处正文高亮的 H01-H46 覆盖、词性/短语类型/长难句说明，以及原文保护检查均通过。",
+    "warnings": [
+      "H42 Freight 使用“不可数名词”而非 n. 缩写，但词性信息完整。"
+    ],
+    "blocking_findings": []
+  },
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  }
+}

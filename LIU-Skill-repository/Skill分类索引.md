@@ -2,7 +2,7 @@
 
 本索引用于维护已认可的个人扩展源库 `D:\桌面\Codex\LIU-Skill-repository\`。Skill、Plugin、MCP、Hook 和 CLI 工具的源资产保存在这里；待测资产位于上级 `Skill待测库\`，项目运行副本由上级 `项目包\<项目名>\` 管理。
 
-> 最后核对：2026-08-17。普通 Skill 以本库中包含 `SKILL.md` 的目录为准；项目 `.codex/skills/` 运行副本不计入本索引。来源包内部的示例 Skill 与插件内置 Skill 仅在相应说明中汇总。部署时必须完整复制，不得使用符号链接、目录联接或硬链接。
+> 最后核对：2026-08-23。普通 Skill 以本库中包含 `SKILL.md` 的目录为准；项目 `.codex/skills/` 运行副本不计入本索引。来源包内部的示例 Skill 与插件内置 Skill 仅在相应说明中汇总。部署时必须完整复制，不得使用符号链接、目录联接或硬链接。
 
 ## 分类规则
 
@@ -48,6 +48,7 @@
 | `grill-me` | `代码与开发/工程流程/grill-me/` | 通过严格追问检验方案或设计 |
 | `grilling` | `代码与开发/工程流程/grilling/` | 针对计划或设计进行多轮质询 |
 | `handoff` | `代码与开发/工程流程/handoff/` | 记录并交接跨会话或跨人员的工作上下文 |
+| `vibehub` | `代码与开发/工程流程/vibehub/` | Vibe Coding 术语识别与需求表达辅助；上游 `aa2f2add`，MIT，词条查询依赖 VibeHub 在线服务 |
 | `source-code-explainer` | `代码与开发/源码讲解/source-code-explainer/` | 面向 C/C++、ROS、嵌入式等真实源码与工程原理的讲解 |
 | `mattpocock-skills` 正式来源包 | `代码与开发/工程流程/mattpocock-skills/` | 按上游 Plugin Manifest 收录 22 个正式工程与生产力 Skill；来源提交 `9603c1c`，MIT；不覆盖本库既有同名 Skill |
 | `addyosmani-agent-skills` 正式来源包 | `代码与开发/工程流程/addyosmani-agent-skills/` | 按上游仓库完整收录 24 个工程流程 Skill、references、Codex 插件元数据和校验资产；来源提交 `df1edb2`，v0.6.7，MIT；项目按需选取，不直接部署 Claude 专用 Hook/命令/agent |
@@ -87,7 +88,6 @@
 | Skill | 路径 | 用途 |
 | --- | --- | --- |
 | `article-illustration-generator` | `图片与视觉/图像生成/article-illustration-generator/` | 文章插图生成 |
-| `vision` | `图片与视觉/图像识别/vision/` | 外部来源视觉识图资产，当前未部署到 Codex |
 | `baoyu-infographic` | `图片与视觉/图表绘制/baoyu-infographic/` | 基于多种版式和视觉风格生成专业信息图 |
 | `drawio-skill` | `图片与视觉/图表绘制/drawio-skill/` | 生成 draw.io 流程图、架构图、可视化图 |
 | `frontend-design` | `图片与视觉/界面设计/frontend-design/` | 高质量前端界面设计 |

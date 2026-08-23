@@ -1,0 +1,18 @@
+{
+  "eval_id": 2,
+  "eval_name": "highlight-boundary",
+  "prompt": "请处理提供的 highlight_boundary.md，并直接写回文件。它专门测试边界：YAML/Markdown URL 查询参数、行内代码和 fenced code 中的 == 都不是学习高亮；英文正文中的四处合法 ==...== 才计入。请生成唯一的 # 复盘总结 以及三个规范二级标题，translation 按顺序覆盖四处高亮并给出单词词性、短语结构和长难句语法/翻译；construction 总结这段短文；synonym 只使用正文证据。不要修改原文或 URL。",
+  "assertions": [
+    "任务被识别为英语外刊高亮复盘并写回提供的 Markdown 文件，未把它当作普通问答。",
+    "文件中只有一个 # 复盘总结，且三个规范二级标题各出现一次、顺序为 translation、construction、synonym。",
+    "覆盖检查将正文四处合法高亮计为 4：complacency、uncertain、pushed back against the 和完整长句；YAML、Markdown URL、行内代码 ignored_inline 与 fenced code ignored_fenced 均未计入。",
+    "complacency 标注为名词（如 n.），uncertain 标注为形容词（如 adj.），pushed back against the 标注为动词短语/结构类别。",
+    "长句 When directly compared or weighted against each other, losses loom larger than gains. 有主干、比较结构或分词省略结构说明，并给出中文语境翻译。",
+    "translation 或覆盖检查明确说明 URL/代码高亮被排除，且不把 ignored_inline、ignored_fenced 或 URL 中的查询字符串列为学习词条。",
+    "construction 有主题和至少按顺序的论述推进，synonym 不凭空加入正文之外的同义词。"
+  ],
+  "expected_output": "边界测试文件被原位复盘，正文高亮计数为 4，URL 和代码中的等号均未被误计。",
+  "input_files": [
+    "evals/files/highlight_boundary.md"
+  ]
+}

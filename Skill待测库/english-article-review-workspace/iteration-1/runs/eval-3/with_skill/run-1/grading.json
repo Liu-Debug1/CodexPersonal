@@ -1,0 +1,96 @@
+{
+  "expectations": [
+    {
+      "text": "任务被识别为本地英语文章复盘并更新现有文件，而不是新建脱离正文的答案。",
+      "passed": true,
+      "evidence": "`outputs/no_highlight_existing_review.md` 保持输入笔记的标题、正文和既有 `# 复盘总结`，并在同一复盘区替换三段内容；`result.md` 也记录该输出副本由 fixture 原位更新。"
+    },
+    {
+      "text": "最终只有一个 # 复盘总结，三个规范二级标题各出现一次且顺序正确；三个旧的 SHOULD_BE_REPLACED 占位符已移除。",
+      "passed": true,
+      "evidence": "静态计数为 `# 复盘总结` 1 次，`## 1. translation`、`## 2. construction`、`## 3. synonym` 各 1 次且顺序正确；输出中没有 `SHOULD_BE_REPLACED`。"
+    },
+    {
+      "text": "translation 明确报告正文有效高亮数量为 0（或等价的“未检测到有效高亮”），保留 ### 覆盖检查，且没有凭空生成单词、词组或长难句条目。",
+      "passed": true,
+      "evidence": "translation 写有“正文未检测到有效的 Obsidian `==...==` 学习高亮（有效高亮数量：0）”，保留 `### 覆盖检查`，并明确“未臆造单词、词组或长难句”。"
+    },
+    {
+      "text": "URL 查询参数和行内代码中的 ==not_a_highlight== 未被计为高亮，也没有出现在词汇覆盖清单中。",
+      "passed": true,
+      "evidence": "覆盖检查明确排除 frontmatter URL 的 `a==b`、行内代码 `` `==not_a_highlight==` ``、正文链接 `query==ignored` 和推荐阅读 URL 的 `x==y`；未生成任何词汇条目。"
+    },
+    {
+      "text": "construction 确实概括正文关于长期观察、渐进趋势和基于证据决策的主题与行文推进，而不是分析推荐阅读或 frontmatter。",
+      "passed": true,
+      "evidence": "`## 2. construction` 概括了“稳定而持续的进步可以与不确定性并存”，并按“核心判断 → 多年趋势 → 耐心观察和基于证据的决策”列出三步行文脉络。"
+    },
+    {
+      "text": "synonym 在正文没有可靠同义证据时明确写出未发现足够证据，不能把 URL、代码或臆造词当作同义组。",
+      "passed": true,
+      "evidence": "`## 3. synonym` 明确写“未发现足够证据整理出可靠的同义词、同义词组或句式替换组”，并说明 URL 查询参数和行内代码不属于正文证据。"
+    },
+    {
+      "text": "复盘区外的 ## 用户备注 标题及“这行用户备注应保留。”文字仍然存在，正文、frontmatter 和推荐阅读没有被删除。",
+      "passed": true,
+      "evidence": "输出仍含 YAML 中的 `title`、`source`、`created` 和 `tags`，保留三个 Article 段落、`## 用户备注` 及其原文、`*The End*` 和 `## 推荐阅读` 链接。"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "skill_name": "english-article-review",
+    "eval_name": "no-highlight-existing-review",
+    "configuration": "with_skill",
+    "skill_loaded": true,
+    "valid_highlights": 0,
+    "root_heading_count": 1,
+    "section_heading_counts": {
+      "translation": 1,
+      "construction": 1,
+      "synonym": 1
+    },
+    "placeholders_remaining": 0,
+    "user_note_preserved": true,
+    "source_and_recommendation_preserved": true,
+    "no_hallucinated_entries": true,
+    "passed": true
+  },
+  "claims": [
+    {
+      "claim": "正文有效学习高亮为 0。",
+      "type": "factual",
+      "verified": true,
+      "evidence": "在 `## Article` 与 `# 复盘总结` 之间，`==...==` 只存在于行内代码和 Markdown URL 目的地址；二者均按边界规则排除。"
+    },
+    {
+      "claim": "没有为无高亮正文臆造词汇、词组或长难句。",
+      "type": "quality",
+      "verified": true,
+      "evidence": "translation 的“单词与词组”和“长难句”仅报告无有效高亮，未列出任何学习条目。"
+    },
+    {
+      "claim": "既有复盘被原位更新，同时用户备注保持不变。",
+      "type": "factual",
+      "verified": true,
+      "evidence": "复盘根标题仍位于 Article 后，三个旧占位段已替换；`## 用户备注` 及其后原文仍在复盘区外。"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "该负例的 with-skill 与 baseline 均为 7/7。它有效覆盖“0 个有效高亮”和已有复盘替换，但不能区分 Skill 是否带来增益；建议增加混合有效高亮、转义/不闭合分隔符、代码块与链接嵌套等更复杂边界。"
+      }
+    ],
+    "overall": "本例是有价值的无高亮回归测试，但区分度较低：baseline 在相同提示下也完整通过。"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "skill_name": "english-article-review",
+  "eval_name": "no-highlight-existing-review",
+  "configuration": "with_skill",
+  "skill_loaded": true,
+  "valid_highlights": 0,
+  "root_heading_count": 1,
+  "section_heading_counts": {
+    "translation": 1,
+    "construction": 1,
+    "synonym": 1
+  },
+  "placeholders_remaining": 0,
+  "user_note_preserved": true,
+  "source_and_recommendation_preserved": true,
+  "no_hallucinated_entries": true,
+  "passed": true
+}

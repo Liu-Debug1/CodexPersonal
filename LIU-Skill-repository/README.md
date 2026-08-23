@@ -18,11 +18,12 @@
 
 ## 已认可的通用规范
 
-- `obsidian-skills/obsidian/` 是已认可的通用 Obsidian 笔记整理规范，覆盖标题层级保护、按需编号、图片、公式、列表、表格、Callout、代码块、ASCII 框图和重复笔记合并。
+- `obsidian-skills/obsidian/` 是已认可的通用 Obsidian 笔记整理规范，覆盖标题层级保护、按需编号、图片、公式、列表、表格、Callout、代码块、ASCII 框图、连续内容的空行控制和重复笔记合并。
 - 项目包可选用该 Skill 的完整副本；Vault 专属的附件目录、Git 和部署约束继续由目标项目的 `AGENTS.md` 定义。
 - `写作与表达/文本润色/prompt-optimizer/` 是已认可的通用 Codex 提示词优化规范，将模糊需求整理成具备目标、范围、约束、验收和验证要求的可执行提示词；默认只优化，不替代用户授权直接执行。
 - `代码与开发/工程流程/mattpocock-skills/` 是 `mattpocock/skills` 的正式来源包，按上游 Plugin Manifest 保存 22 个稳定工程与生产力 Skill 的完整副本；其用于后续项目选用，不是 Codex 或 Claude 的运行目录。
 - `代码与开发/工程流程/addyosmani-agent-skills/` 是 `addyosmani/agent-skills` 的正式来源包，固定上游 `df1edb2`（v0.6.7），保留 24 个工程流程 Skill、共享 references、插件元数据和上游校验资产；项目使用时按需选择，不直接把整包当作项目运行目录。
+- `代码与开发/工程流程/vibehub/` 是 `oil-oil/vibe-hub-skill` 的已认可来源 Skill，固定上游提交 `aa2f2add8397daae06c55f9ca9d75dc7eee6c08d`（MIT）；用于在 Vibe Coding 任务中将口语化需求映射为准确术语并按需提供 VibeHub 词条链接，远程词条解析依赖 `vibe-hub.org` 服务。
 - `学习与研究/leetcode-review/` 是已认可的 LeetCode C++ 复盘规范：完整复盘同步源码、看板、刷题记录和 Anki；代码推理型知识卡必须同时给出真实源码位置与最小相关 C++ 片段，避免要求复习者先凭记忆还原整段代码。
 
 ## 使用流程

@@ -1,0 +1,28 @@
+{
+  "configuration": "without_skill",
+  "fixture": "highlight_boundary.md",
+  "valid_highlights_expected": 4,
+  "valid_highlights_processed": 4,
+  "raw_pair_matches": 8,
+  "noise_miscounted": true,
+  "noise_listed_as_possible_matches": [
+    "inline code ==ignored_inline==",
+    "fenced code ==ignored_fenced==",
+    "YAML URL fragment b&next=c",
+    "Markdown URL fragment y&z",
+    "unclosed recommendation URL =="
+  ],
+  "headers": {
+    "# 复盘总结": 1,
+    "## 1. translation": 1,
+    "## 2. construction": 1,
+    "## 3. synonym": 1
+  },
+  "word_pos_markers": ["n.", "adj."],
+  "phrase_structure_present": false,
+  "long_sentence_structure_and_translation": false,
+  "construction_theme_and_progression": true,
+  "synonym_evidence_bounded": false,
+  "source_preserved_outside_review_normalized": true,
+  "outcome": "fail_boundary_isolation"
+}

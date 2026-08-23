@@ -1,0 +1,48 @@
+{
+  "run_id": "highlight-boundary-without_skill",
+  "skill_name": "english-article-review",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "正文四处合法高亮全部覆盖，且按顺序识别为 complacency、uncertain、pushed back against the 和完整长句。",
+      "passed": false,
+      "evidence": "虽列出四个正文表达，但没有稳定的 H01-H04 覆盖清单，且将代码/URL 匹配混入覆盖结果。"
+    },
+    {
+      "text": "YAML、Markdown URL、行内代码和 fenced code 中的 == 未计为学习高亮。",
+      "passed": false,
+      "evidence": "输出把 ignored_inline、ignored_fenced 和 URL 片段列为可能匹配；raw_pair_matches=8。"
+    },
+    {
+      "text": "输出只有一个根复盘标题和三个按顺序的规范二级标题。",
+      "passed": true,
+      "evidence": "静态计数为 # 复盘总结=1、三个规范二级标题各=1。"
+    },
+    {
+      "text": "translation 含词性、短语结构、长句主干/语法/翻译，construction 与 synonym 有正文证据。",
+      "passed": false,
+      "evidence": "有 n./adj. 和基础主题，但短语未标明完整结构类别，长难句未给出完整语法/语境翻译，synonym 混入非同义相关表达。"
+    },
+    {
+      "text": "复盘区外 fixture 内容保持不变。",
+      "passed": true,
+      "evidence": "移除插入复盘区后与 fixture 内容一致（仅末尾换行作规范化比较）。"
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 3,
+    "total": 5,
+    "pass_rate": 0.4
+  },
+  "execution_metrics": {
+    "total_tool_calls": 0,
+    "output_chars": 2070,
+    "errors_encountered": 0
+  },
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  }
+}
