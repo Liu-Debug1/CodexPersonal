@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "projectName": "CodexGlobal",
+  "projectPath": "C:\\Users\\Liuzwei\\.codex",
+  "targetAgent": "Codex",
+  "deploymentScope": "managed-subdirectories",
+  "targetSkillsPath": "C:\\Users\\Liuzwei\\.codex\\skills",
+  "legacyPathsToRemove": [],
+  "managedAssets": {
+    "skills": [
+      {
+        "name": "codex-skill-governance",
+        "source": "project-package",
+        "version": "local",
+        "sha256": "2b3ae64da3dc45ab6fc8ceeca2885eb9253048a3d79e262d66c1a284094e095c",
+        "sourcePath": "D:\\桌面\\Codex\\LIU-Skill-repository\\技能管理\\创建与同步\\codex-skill-governance",
+        "syncPolicy": "tracked"
+      },
+      {
+        "name": "disk-cleaner-skills",
+        "source": "project-package",
+        "version": "local",
+        "sha256": "a68688a714cd6d25f420d9b95a1b6a763da90d389781fd884bbb798e2327654e",
+        "sourcePath": "D:\\桌面\\Codex\\LIU-Skill-repository\\系统工具\\disk-cleaner-skills",
+        "syncPolicy": "tracked"
+      },
+      {
+        "name": "prompt-optimizer",
+        "source": "project-package",
+        "version": "local",
+        "sha256": "e3942a2cc3e9b421ae98d6936c5435a9189a00551f2dfe52e17c0f29ccaf164a",
+        "sourcePath": "D:\\桌面\\Codex\\LIU-Skill-repository\\写作与表达\\文本润色\\prompt-optimizer",
+        "syncPolicy": "tracked"
+      },
+      {
+        "name": "source-code-explainer",
+        "source": "project-package",
+        "version": "local",
+        "sha256": "f5c091d7cc4fc659292040d6c9f3cad3daf917143aa420dc0d2f8b0355f840ab",
+        "sourcePath": "D:\\桌面\\Codex\\LIU-Skill-repository\\代码与开发\\源码讲解\\source-code-explainer",
+        "syncPolicy": "tracked"
+      },
+      {
+        "name": "vibehub",
+        "source": "project-package",
+        "version": "local",
+        "sha256": "1bffe77cad67dd8a92821a628745ecda460edd6a81e95509f5c0c53fd2080697",
+        "sourcePath": "D:\\桌面\\Codex\\LIU-Skill-repository\\代码与开发\\工程流程\\vibehub",
+        "syncPolicy": "tracked"
+      }
+    ],
+    "plugins": [],
+    "mcp": [],
+    "cli": []
+  },
+  "skillsLastUpdated": "2026-08-30",
+  "lastVerifiedAt": "2026-08-30T09:06:30.6635473+08:00",
+  "contentSha256": "d580529be108b63715cbf787bb0aa7b0d58990701db1de315553f5a80c67a898",
+  "fileCount": 52
+}

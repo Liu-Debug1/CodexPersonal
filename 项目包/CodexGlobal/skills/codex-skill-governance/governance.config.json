@@ -1,0 +1,10 @@
+{
+  "repositoryRoot": "D:/桌面/Codex",
+  "personalLibraryName": "LIU-Skill-repository",
+  "packagesDirectoryName": "项目包",
+  "runtimeDirectoryName": ".codex",
+  "targetAgent": "Codex",
+  "globalRuntimeSkillsPath": "C:/Users/Liuzwei/.codex/skills",
+  "pluginCachePath": "C:/Users/Liuzwei/.codex/plugins/cache",
+  "projectDeployScript": "scripts/Sync-CodexProjectPackage.ps1"
+}

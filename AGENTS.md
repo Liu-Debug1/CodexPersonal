@@ -15,10 +15,10 @@
 
 ## Skill 项目包部署
 
-- `项目包/<项目名>/skills/` 是 `<项目绝对路径>/.codex/skills/` 的唯一可编辑来源。
+- `项目包/<项目名>/skills/` 是 manifest 指向的 Skill 运行目录的唯一可编辑来源。普通项目使用 `<项目绝对路径>/.codex/skills/`；全局 `CodexGlobal` 使用 `C:\Users\Liuzwei\.codex\skills\` 的受管子目录范围。
 - 修改项目包中的任一 Skill 后，默认将改动同步到 manifest 指向的真实项目：连续执行 `PlanSkills`、`DeploySkills` 和 `VerifySkills`。只有用户明确要求“先不需要同步更新”或等效表述时，才只更新项目包而不部署。
-- 执行 Skill 部署前，必须先运行 `scripts/Sync-CodexProjectPackage.ps1` 的 `PlanSkills` 预检。
-- `DeploySkills` 仅删除 manifest 指向项目的 `.codex/skills/` 目录，再完整复制项目包的 `skills/`；不得删除 `.codex/agents`、`.codex/config.toml`、`.codex/settings.local.json` 或项目业务文件。
+- 执行 Skill 部署前，必须先运行 `LIU-Skill-repository/技能管理/创建与同步/codex-skill-governance/scripts/Sync-CodexProjectPackage.ps1` 的 `PlanSkills` 预检。
+- 默认 `DeploySkills` 仅删除 manifest 指向项目的 `.codex/skills/` 目录，再完整复制项目包的 `skills/`；`deploymentScope: managed-subdirectories` 仅替换 manifest 登记的直接 Skill 子目录。两种范围都不得删除 `.codex/agents`、`.codex/config.toml`、`.codex/settings.local.json`、`.system` 或项目业务文件。
 - 部署后必须运行 `VerifySkills`，确认目录、文件和 SHA-256 与项目包一致，并更新项目包和项目包总览的最后更新日期。
 
 ## 其他资产

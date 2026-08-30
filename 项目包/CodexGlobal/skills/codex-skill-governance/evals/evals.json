@@ -1,0 +1,53 @@
+{
+  "skill_name": "codex-skill-governance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "检查 D:\\桌面\\Codex 个人 Skill 库、Ob_Learning 项目包和项目 .codex 运行目录是否有漂移，只生成审计报告，不要修改任何文件。",
+      "expected_output": "运行 Audit，列出各副本 SHA-256、clean 项和剩余 drift/conflict，不执行复制或部署。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "obsidian Skill 已经在个人库更新了，请找出所有登记项目并生成同步计划，先不要覆盖项目文件。",
+      "expected_output": "运行 Plan -AssetName obsidian，生成 JSON 和 Markdown 计划，包含每个变更编号、来源/目标哈希和确认风险。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "某个项目里的 skill 比个人库新，把它作为回写候选，但不要自动覆盖个人库。",
+      "expected_output": "将项目包版本标记为候选源，生成 writeback-personal-library 计划，并要求用户明确确认 ChangeId。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "项目 .codex/skills 运行副本被直接改过，请恢复它并验证项目包和运行目录哈希。",
+      "expected_output": "生成 deploy-project 计划；只有用户确认 ChangeId 后才调用 PlanSkills、DeploySkills、VerifySkills。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "检查项目 manifest 里登记的 Plugin 版本和 Codex Plugin 缓存，不要直接复制或删除缓存。",
+      "expected_output": "报告 Plugin 元数据、版本和安装状态；不直接操作 Plugin 缓存，缺少安装入口时生成手工安装计划。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "个人库、项目包、运行目录三个版本都不一样，帮我统一成个人库版本。",
+      "expected_output": "将状态标为 conflict，停止自动覆盖，要求先查看差异并明确选择来源。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "只在 Ob_Learning 删除 test-skill，个人库里的源 Skill 要保留。",
+      "expected_output": "生成 DeletionScope Project 计划，先删除项目包副本，再通过 PlanSkills、DeploySkills、VerifySkills 清理项目运行副本；个人库不删除。",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "test-skill 不再需要了，删除个人库源 Skill，并把所有项目里的 test-skill 一并删除。",
+      "expected_output": "生成 DeletionScope Personal 计划，按项目删除、全局删除、个人源删除的依赖顺序执行，并在每一步前后校验目标哈希。",
+      "files": []
+    }
+  ]
+}

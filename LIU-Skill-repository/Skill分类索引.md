@@ -2,7 +2,7 @@
 
 本索引用于维护已认可的个人扩展源库 `D:\桌面\Codex\LIU-Skill-repository\`。Skill、Plugin、MCP、Hook 和 CLI 工具的源资产保存在这里；待测资产位于上级 `Skill待测库\`，项目运行副本由上级 `项目包\<项目名>\` 管理。
 
-> 最后核对：2026-08-23。普通 Skill 以本库中包含 `SKILL.md` 的目录为准；项目 `.codex/skills/` 运行副本不计入本索引。来源包内部的示例 Skill 与插件内置 Skill 仅在相应说明中汇总。部署时必须完整复制，不得使用符号链接、目录联接或硬链接。
+> 最后核对：2026-08-30。普通 Skill 以本库中包含 `SKILL.md` 的目录为准；项目 `.codex/skills/` 运行副本不计入本索引。来源包内部的示例 Skill 与插件内置 Skill 仅在相应说明中汇总。部署时必须完整复制，不得使用符号链接、目录联接或硬链接。
 
 ## 分类规则
 
@@ -33,7 +33,7 @@
 | `find-skills` | `技能管理/发现与审计/find-skills/` | 查找、发现、推荐可安装 skill |
 | `skill-vetter` | `技能管理/发现与审计/skill-vetter/` | 安装前安全审计外部 skill |
 | `skill-creator` | `技能管理/创建与同步/skill-creator/` | 创建、修改、评测 skill |
-| `skill-sync-repo` | `技能管理/创建与同步/skill-sync-repo/` | 同步 Skill 到个人库；部署时遵循分类索引和完整复制规则 |
+| `codex-skill-governance` | `技能管理/创建与同步/codex-skill-governance/` | 审计和治理个人库、全局运行目录、项目包与项目运行目录的 Skill/Plugin 漂移；支持计划化同步、哈希验证和跨 Agent 配置 |
 | `setup-codex` | `技能管理/创建与同步/setup-codex/` | Codex 初始化与工作方式配置 |
 | `writing-great-skills` | `技能管理/创建与同步/writing-great-skills/` | 编写和维护高质量 skill 的原则与参考 |
 
@@ -89,7 +89,6 @@
 | --- | --- | --- |
 | `article-illustration-generator` | `图片与视觉/图像生成/article-illustration-generator/` | 文章插图生成 |
 | `baoyu-infographic` | `图片与视觉/图表绘制/baoyu-infographic/` | 基于多种版式和视觉风格生成专业信息图 |
-| `drawio-skill` | `图片与视觉/图表绘制/drawio-skill/` | 生成 draw.io 流程图、架构图、可视化图 |
 | `frontend-design` | `图片与视觉/界面设计/frontend-design/` | 高质量前端界面设计 |
 | `manimgl-best-practices` | `图片与视觉/动画视频/manimgl-best-practices/` | ManimGL 最佳实践 |
 | `remotion` | `图片与视觉/动画视频/remotion/` | Remotion 视频与动画制作 |
@@ -101,21 +100,19 @@
 | `defuddle` | `信息搜取/网页抽取/defuddle/` | 网页正文抽取为干净 Markdown |
 | `agent-browser` | `信息搜取/浏览器自动化/vercel-labs-agent-browser-agent-browser/` | 浏览器自动化、网页交互、截图和抓取 |
 | `bilibili-subtitle` | `信息搜取/视频字幕/bilibili-subtitle/` | 提取 Bilibili 视频已有字幕并输出转录文本或 SRT/VTT |
-| `notebooklm` | `信息搜取/资料库问答/notebooklm/` | 通过 NotebookLM 查询资料库 |
 
 ### 学习与研究
 
 | Skill | 路径 | 用途 |
 | --- | --- | --- |
-| `学习秘书团` | `学习与研究/学习秘书团/` | 批改、复盘、出题等学习辅助流程 |
 | `leetcode-review` | `学习与研究/leetcode-review/` | 复盘 Ob_Learning 中的 LeetCode C++ 题解，维护看板、刷题记录与 Anki；代码推理卡附源码上下文 |
+| `english-article-review` | `学习与研究/english-article-review/` | 英语外刊精读复盘：按正文高亮整理 translation、construction、synonym，并执行固定结构与边界验收 |
 | `teach` | `学习与研究/teach/` | 面向多会话学习目标的课程与学习记录工作流 |
 
 ### 生活记录
 
 | Skill | 路径 | 用途 |
 | --- | --- | --- |
-| `mubu-diet-recorder` | `生活记录/mubu-diet-recorder/` | 计算饮食热量和宏量营养素，并按需写入幕布每日记录 |
 
 ### 系统工具
 
